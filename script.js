@@ -109,7 +109,7 @@ restartButton.addEventListener("click", () => {
     userscore.innerText = useris;
     computerscore.innerText = compis;
     moveCountDisplay.innerText = `${moveCount}/15`; // Reset the move count
-    showPage("page1");
+    showPage("page2");
 });
 
 choices.forEach((choice) => {
