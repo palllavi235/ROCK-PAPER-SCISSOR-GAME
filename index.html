@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page 1: Start Screen -->
+<div id="page1" class="page active">
+    <h1>Welcome to ROCK PAPER SCISSOR!</h1>
+    <button id="startGame">Play Game 👉</button>
+</div>
+
+<!-- Page 2: Game Page -->
+<div id="page2" class="page">
+    <div class="choices">
+        <div class="choice" id="ROCK"><img src="image/ROCK.jpg" alt="ROCK"></div>
+        <div class="choice" id="PAPER"><img src="image/PAPER.jpg" alt="PAPER"></div>
+        <div class="choice" id="SCISSOR"><img src="image/SCISSOR.jpg" alt="SCISSOR"></div>
+    </div>
+    <div class="name">
+        <div class="name1">ROCK</DIV> 
+           <div class="name2">PAPER</DIV>  
+               <div class="name3">SCISSOR</DIV>    
+       </div>
+       
+       
+    <div class="score">
+        <div class="userscore">
+            <p id="useris">0</p>
+            <h3>YOU</h3>
+        </div>
+        <div class="computerscore">
+            <p id="compis">0</p>
+            <h3> COMPUTER</h3>
+        </div>
+    </div>
+
+    <div id="moveCount" class="move-count">0/15</div>
+
+    <div class="message">
+        <h3 id="msg">PLAY YOUR MOVE</h3>
+    </div>
+    <button id="endRound" style="display: none;"> Result👉</button>
+</div>
+
+<!-- Page 3: Results Page -->
+<div id="page3" class="page">
+    <h1 id="finalResult">CONGRATULATIONS!</h1>
+    <p id="scoreSummary"></p>
+    <div id="celebration"></div>
+    <button id="restartGame">Play Again👉</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

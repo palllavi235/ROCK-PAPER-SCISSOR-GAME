@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    border: 0;
+    background-color: rgb(252, 252, 252);
+}
+
+
+h1 {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 8rem;
+    line-height: 8rem;
+}
+#startGame {
+    justify-content: center;
+    background-color:rgb(7, 254, 7);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-size:xx-large;
+    margin-left: 40%;
+    margin-top: 15%;
+
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+}
+
+.choice {
+    display: flex;
+    margin: 1rem;
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+    opacity: 80%;
+    background-color: black;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    display: flex;
+    margin-top: 0rem;
+    font-size: 2rem;
+    margin-left: 33rem;
+}
+
+.name2 {
+    margin-left: 7rem;
+}
+
+.name3 {
+    margin-left: 6.5rem;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.userscore,
+.computerscore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+#useris,
+#compis {
+    font-size: 2rem;
+}
+.move-count {
+    font-size: 7rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(238, 206, 103);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    justify-content: center;
+    display: inline;
+    margin-left: 43%;
+    padding: 1rem;
+}
+
+
+.message {
+    display: flex;
+    justify-content: center;
+}
+
+#msg {
+    font-size: 2rem;
+    margin-top: 5rem;
+    display: inline;
+    padding: 1rem;
+    background-color: rgb(186, 177, 177);
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+}
+#endRound {
+    justify-content: center;
+    display: inline;
+    background-color: rgb(102, 255, 0);
+    color: rgb(0, 0, 0);
+    margin-left: 80%;
+    padding:2rem ; 
+    font-size: xx-large;
+
+
+}
+
+.page {
+    display: none; /* Hide all pages by default */
+}
+
+.page.active {
+    display: block; /* Show the active page */
+}
+#finalResult {
+justify-content: center;
+     /* display: inline; */
+     /* margin-left: 40%; */
+     padding:2rem ;
+     /* margin-top: 50rem; */
+     /* margin:10rem ; */
+     background-color: black;
+     color: aliceblue;
+
+}
+#scoreSummary{
+justify-content: center;
+text-align: center;
+background-color: rgb(3, 127, 181);
+     color: rgb(0, 0, 0);
+     font-size: xx-large;
+     /* margin-top: 10rem; */
+     margin:3rem ;
+padding: 1rem;
+/* margin-left: 40%; */
+
+}
+#restartGame{    
+    justify-content: center;
+    background-color:rgb(7, 254, 7);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-size:xx-large;
+    margin-left: 40%;
+    /* margin-top: 15%; */
+    margin-top: 2rem;
+}
+/* #celebration {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+} */
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    animation: confetti 2s infinite;
+}
+
+@keyframes confetti {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(500px); opacity: 0; }
+}
